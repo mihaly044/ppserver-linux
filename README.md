@@ -9,5 +9,13 @@ PPServer is part of the [ParkPlaces](https://github.com/mihaly044/parkplaces/) p
 ## Submodules
 The original Windows PPServer uses the [WatsonTcp library](https://github.com/jchristn/WatsonTcp) by [jchristn](https://github.com/jchristn) but unfortunately it is not available for .NET core. To overcome this issue, we have created [watsontcp-dotnetcore](https://github.com/mihaly044/watsontcp-dotnetcore), a A .NET core port of WatsonTcp.
 
+## Compiling the sources
+```bash
+git clone --recursive https://github.com/mihaly044/ppserver-linux.git
+cd ppserver-linux
+dotnet publish -c Release --runtime linux-x64
+```
+Find the built binary in /bin/netcoreapp2.1/linux-x64/publish
+
 ## Usage & setting up
 For detailed information about setting up the server, please refer to ParkPlaces' [readme](https://github.com/mihaly044/parkplaces/blob/master/README.md).
