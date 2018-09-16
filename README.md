@@ -13,7 +13,7 @@ The original Windows PPServer uses the [WatsonTcp library](https://github.com/jc
 ```bash
 git clone --recursive https://github.com/mihaly044/ppserver-linux.git
 cd ppserver-linux
-dotnet publish -c Release --runtime linux-x64
+dotnet publish -c Release --runtime linux-x64 src/
 ```
 Find the built binary in /bin/netcoreapp2.1/linux-x64/publish
 
